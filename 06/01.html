@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+	//  let arr1=[0, 0, -1, 2, 0]
+	//  let arr2=[-1, 2, 7, 0, 7]
+	//  let arr3=[4, 2, 8, 0, 6, 0, 4, -2]
+ //   function active(arr){
+ //    for(let j=0;j<arr.length;j++){
+ //    	for(let i=0;i<arr.length-1;i++){
+ //    		if(!arr[i]){
+ //    			let temp =arr[i]
+ //    			arr[i]=arr[i+1]
+ //    			arr[i+1]=temp
+ //    		}
+ //    	}
+ //    }
+ //    return arr;
+ //   }
+ // active(arr1);
+ // active(arr2)
+ // active(arr3)
+ // console.log(arr1,arr2,arr3);
+ // let a=1;
+ // let b=2;
+ //  b=a=3;
+ //  console.log(a,b)
+ //  let x=12,y=12
+ //  function fn(){
+ //  	let x=y=13
+ //  	console.log(x,y)
+ //  }
+ //  fn()
+ //  console.log(x,y)
+ //  
+     
+     let i=1;
+     let fn=(i)=>(n)=>console.log(n+(++i))
+     // let fn=function(i){
+     // 	return function(n){
+     // 		return console.log(n+(++i))
+     // 	}
+     // }
+     let f=fn(1)   
+       // f=function (n){
+       //  return console.log(n+(++i))
+       // }
+     f(2)    //i=2 输出4  i=1(fn(1))
+      
+     fn(3)(4)
+     //  第一层
+     //  fn(3) 结果为 i=3 function(n){
+     //    console.log(n+(++i))
+     //  }
+     //  第二层
+     //  console.og(4+(++3))  
+     //  i=4 ,4+4=8
+     f(5)
+     // i=3 输出3+5=8
+     console.log(i) //1 全局
+</script>
+</html>
